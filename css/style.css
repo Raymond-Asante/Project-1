@@ -7,7 +7,6 @@ body{
 
 .top-nav{
     height: 20px;
-  
     background: #1b1b1d;
 }
 .banner{
@@ -30,8 +29,19 @@ h2{ margin-top: 24px; font-size: 1.25rem; border-bottom: 1px solid #ececec; padd
 h3{ margin: 10px 0 6px;}
 
 p{
-    line-height: 1.6;
-    margin: 0 0 16px 0;;
+    line-height: 2.8;
+    margin: 0 0 18px 0;;
+}
+
+.float-left{
+    float: left;
+    width: 220px;
+    height:220px;
+    object-fit: cover;
+    margin-right: 18px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 4px solid rgba(0,0,0,0.05);
 }
 
 .three-column-layout{
@@ -46,4 +56,42 @@ p{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 18px;
+}
+section{
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 14px;
+    border-radius: 6px;
+    min-height: 160px;
+}
+section img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+footer{
+    margin-top: 30px;
+    text-align: center;
+    padding: 18px;
+    background: #1b1b1d;
+    color: white;
+}
+
+main::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width:900px){
+    .three-column-layout{ grid-template-columns: repeat(1fr);}
+    .two-column-layout{ grid-template-columns: repeat(1fr);}
+    .float-left{ float: none; display: block; margin: 0 auto 18px auto; }
+    main { padding: 14px;}
+}
+@media(max-width:420px){
+    .float-left{ width: 160px; height: 160px;}
+    section img{ height: 100px; } 
 }
