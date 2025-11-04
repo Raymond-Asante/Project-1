@@ -1,47 +1,50 @@
 body{
     font-family: Arial, sans-serif;
-    background: #f7f7f9;
+    background: #120d17;
     margin: 0;
-    color: #222;
+    color: #d8d2e1;
 }
 
 .top-nav{
     height: 20px;
-    background: #1b1b1d;
+    background: #1f0f25;
 }
 .banner{
-    background: #2d2d31;
+    background: linear-gradient(90deg, #5c1e29, #7d1d2d);
     color: #fff;
     padding: 20px;
-    text-align: center;;
+    text-align: center;
+    text-shadow: 0 0 6px black;
 }
 
 main{
     max-width: 1100px;
     margin: auto;
     padding: 20px;
-    background: white;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    background: #1b1125;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    border: 1px solid #492942
 }
 
-h1{ margin: 0; font-size: 1.6rem; letter-spacing: 2px;}
-h2{ margin-top: 24px; font-size: 1.25rem; border-bottom: 1px solid #ececec; padding-bottom: 10px;}
-h3{ margin: 10px 0 6px;}
+h1{ margin: 0; font-size: 1.6rem; letter-spacing: 2px; color: #f7cadb;}
+h2{ margin-top: 24px; font-size: 1.25rem; border-bottom: 1px solid #ececec; padding-bottom: 10px; color: #e88fae;}
+h3{ margin: 10px 0 6px;color: #db8db6;}
 
 p{
     line-height: 2.8;
-    margin: 0 0 18px 0;;
+    margin: 0 0 18px 0;
 }
 
 .float-left{
     float: left;
     width: 220px;
     height:220px;
-    object-fit: cover;
+    object-fit: fill;
     margin-right: 18px;
     margin-bottom: 12px;
     border-radius: 6px;
-    border: 4px solid rgba(0,0,0,0.05);
+    border: 4px solid #5c1e29;
+    box-shadow: 0 0 12px rgba(255,0,60,0.4);
 }
 
 .three-column-layout{
@@ -58,11 +61,12 @@ p{
     margin-top: 18px;
 }
 section{
-    background: #ffffff;
-    border: 1px solid #ddd;
+    background: #201526;
+    border: 1px solid #472543;
     padding: 14px;
     border-radius: 6px;
     min-height: 160px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4)
 }
 section img{
     width: 100%;
@@ -70,14 +74,17 @@ section img{
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 8px;
+    border: 2px solid #6c2644;
 }
 
 footer{
     margin-top: 30px;
     text-align: center;
     padding: 18px;
-    background: #1b1b1d;
-    color: white;
+    background: #160c1b;
+    color: #b48fbf;
+    border-top: 1px solid #472543;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.6);
 }
 
 main::after{
